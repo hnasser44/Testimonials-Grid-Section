@@ -29,10 +29,19 @@ img {
 
 .grid {
     display: grid;
-    gap: 1.5rem;
-    
+    gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    margin: auto;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 ul {
      list-style: none;
@@ -53,19 +62,25 @@ span {
 }
 
 .grid-item {
-    border-radius: 10px;
-    padding: 2em;
+    border-radius: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: Barlow Semi Condensed,serif;
+    font-size: 13px;
 }
 
 .grid-item h1 {
     color: white;
     margin-top: .8em;
+    font-size: 20px;
 }
 
 .grid-item p {
     color: white;
     opacity: 0.5;
-    font-size: 1.3em;
+    font-size: 13px;
     margin-top: .7em;
     line-height: 1.4;
 }
@@ -107,10 +122,19 @@ span {
 }
 
 @media (min-width: 600px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10em;
+        min-height: 100vh;
+    }
        .grid {
-           grid-template-columns: repeat(4,1fr);  
-           align-items: center;
-           justify-content: center; 
+        display: grid;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+        margin: auto;
        }
        .daniel-card {
            grid-column: span 2;
