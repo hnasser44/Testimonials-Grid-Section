@@ -35,13 +35,6 @@ img {
     margin: auto;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
 ul {
      list-style: none;
@@ -130,11 +123,7 @@ span {
         min-height: 100vh;
     }
        .grid {
-        display: grid;
-        grid-template-rows: auto;
-        grid-gap: 20px;
         grid-template-columns: repeat(4,1fr);
-        margin: auto;
        }
        .daniel-card {
            grid-column: span 2;
